@@ -37,7 +37,7 @@ export default function JokePage() {
 	  
 		<button
 		  onClick={() => {
-			setJoke(null); // Kosongkan dulu agar "Loading joke..." tampil lagi
+			setJoke(null);
 			fetch('https://official-joke-api.appspot.com/random_joke')
 			  .then((res) => res.json())
 			  .then((data) => setJoke(data));
